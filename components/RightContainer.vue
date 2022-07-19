@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen w-5/6 pr-[40px]">
+  <div class="min-h-screen w-5/6 pr-[40px] pb-[50px]">
     <div>
       <span class="text-white text-3xl font-semibold">Discover</span>
       <div class="flex flex-row mt-[30px]">
@@ -21,8 +21,34 @@
         />
       </div>
     </div>
-    <div class="mt-[60px]">
+    <div class="mt-[50px]">
       <span class="text-white text-2xl font-medium">Most watched</span>
+      <div class="mt-[30px] flex flex-row">
+        <CardMostWatched
+          title="Skateboard"
+          author="Pedro A."
+          views="53k"
+          createdSince="1 week ago"
+        />
+        <CardMostWatched
+          title="Skateboard"
+          author="Pedro A."
+          views="53k"
+          createdSince="1 week ago"
+        />
+        <CardMostWatched
+          title="Skateboard"
+          author="Pedro A."
+          views="53k"
+          createdSince="1 week ago"
+        />
+        <CardMostWatched
+          title="Skateboard"
+          author="Pedro A."
+          views="53k"
+          createdSince="1 week ago"
+        />
+      </div>
     </div>
   </div>
 </template>

@@ -13,7 +13,7 @@
       <div class="bg-white h-7 w-7 rounded-full">
 
       </div>
-      <span class="ml-5 text-white text-sm">Name</span>
+      <span class="ml-5 text-white text-sm">Lucas Lima</span>
       <div class="ml-5 text-white">
         icon
       </div>
