@@ -1,7 +1,7 @@
 <template>
   <header class="flex flex-row py-[20px]">
     <div class="h-10 w-1/6 flex items-center">
-      <span class="pl-5 text-white font-semibold">Noutte</span>
+      <span class="pl-5 text-white font-semibold cursor-pointer">Noutte</span>
     </div>
     <div class="w-4/6 flex items-center">
       <input type="text"

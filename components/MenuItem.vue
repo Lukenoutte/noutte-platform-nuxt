@@ -1,19 +1,48 @@
 <template>
-  <div class="py-[10px] flex flex-row items-center">
-    <div class="bg-[#353340] h-[32px] w-[32px] rounded-xl flex justify-center items-center"
-        :class="{'bg-[#ff7551]': isSelected}">
-      <i class="text-[#808191]" :class="{'!text-white': isSelected}">a</i>
+  <NuxtLink
+    class="
+      mt-[5px]
+      py-[5px]
+      flex flex-row
+      items-center
+      cursor-pointer
+      hover:bg-sky-700
+      rounded-md
+      pl-[10px]
+      ml-[10px]
+      w-[90%]
+    "
+    :to="pageRoute"
+  >
+    <div
+      class="
+        bg-[#353340]
+        h-[32px]
+        w-[32px]
+        rounded-xl
+        flex
+        justify-center
+        items-center
+      "
+      :class="{ 'bg-[#ff7551]': isSelected }"
+    >
+      <em class="text-[#808191]" :class="{ '!text-white': isSelected }">a</em>
     </div>
-    <span class="ml-[15px] text-[#808191] font-medium" :class="{'!text-white': isSelected}">{{title}}</span>
-  </div>
+    <span
+      class="ml-[15px] text-[#808191] font-medium"
+      :class="{ '!text-white': isSelected }"
+      >{{ title }}</span
+    >
+  </NuxtLink>
 </template>
 
 <script setup>
 const props = defineProps({
   title: String,
   isSelected: Boolean,
-  iconName: String
-})
+  iconName: String,
+  pageRoute: String,
+});
 
 const { isSelected } = toRefs(props);
 </script>

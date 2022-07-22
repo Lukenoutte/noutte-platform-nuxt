@@ -1,38 +1,62 @@
 <template>
-  <div class="h-[365px] bg-red-500 rounded-lg mr-[20px] p-[40px] card-size relative">
+  <div
+    class="
+      h-[365px]
+      bg-red-500
+      rounded-lg
+      mr-[20px]
+      p-[40px]
+      card-size
+      relative
+      cursor-pointer
+    "
+  >
     <div class="flex flex-col">
       <span class="text-white text-4xl font-medium">{{ title }}</span>
       <div class="flex flex-row mt-[40px]">
-        <div class="rounded-full w-[50px] h-[50px] bg-white"><div></div></div>
+        <div class="rounded-full w-[50px] h-[50px] bg-white relative">
+          <div
+            class="
+              rounded-full
+              w-[15px]
+              h-[15px]
+              bg-white
+              border-solid border-2 border-red-500
+              absolute top-[72%] right-0
+            "
+          >
+          <div></div>
+          </div>
+        </div>
         <div class="ml-[10px] mt-[5px] text-white">
           <p class="text-sm font-semibold">{{ author }}</p>
-          <p class="text-xs font-light">{{views}} views - {{ createdSince }}</p>
+          <p class="text-xs font-light">
+            {{ views }} views - {{ createdSince }}
+          </p>
         </div>
       </div>
     </div>
-    <div class="bg-neutral-800/50 px-[10px] absolute right-3 bottom-3 rounded-md">
+    <div
+      class="bg-neutral-800/50 px-[10px] absolute right-3 bottom-3 rounded-md"
+    >
       <span class="text-xs font-light text-white">{{ videoSize }}</span>
     </div>
   </div>
 </template>
 
 <script setup>
-
 defineProps({
   widthCard: { type: String, required: true },
   title: { type: String, required: true },
   author: { type: String, required: true },
   createdSince: { type: String, required: true },
   views: { type: String, required: true },
-  videoSize: { type: String, required: true }
-})
-
+  videoSize: { type: String, required: true },
+});
 </script>
 
 <style>
-
-  .card-size {
-    width: v-bind(widthCard);
-  }
-
+.card-size {
+  width: v-bind(widthCard);
+}
 </style>
