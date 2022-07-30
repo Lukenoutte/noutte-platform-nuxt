@@ -2,7 +2,7 @@
   <div class="bg-dark-blue min-h-screen">
       <TheHeader/>
       <div class="flex flex-row">
-        <MenuLeft/>
+        <TheMenuLeft/>
         <div class="w-[85%]">
           <slot/>
         </div>

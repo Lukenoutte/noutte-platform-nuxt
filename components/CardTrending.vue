@@ -50,32 +50,8 @@
         <span class="ml-[20px]">12.00 likes</span>
       </div>
       <div class="flex flex-row mt-[20px]">
-        <div
-          class="
-            bg-white
-            rounded-full
-            w-[40px]
-            h-[40px]
-            cursor-pointer
-            relative
-          "
-        >
-          <div
-            class="
-              rounded-full
-              w-[13px]
-              h-[13px]
-              bg-blue-500
-              border-solid border-2 border-most-watched-card-bg
-              absolute
-              top-[72%]
-              right-0
-            "
-          >
-            <div></div>
-          </div>
-        </div>
-        <div class="ml-[15px] font-light">
+        <ProfilePicture/>
+        <div class="mt-[5px] ml-[15px] font-light">
           <p class="text-white text-xs cursor-pointer">Author</p>
           <p class="mt-[5px] text-grey-card text-[11px]">
             4 days ago

@@ -14,20 +14,7 @@
     <div class="flex flex-col">
       <span class="text-white text-4xl font-medium">{{ title }}</span>
       <div class="flex flex-row mt-[40px]">
-        <div class="rounded-full w-[50px] h-[50px] bg-white relative">
-          <div
-            class="
-              rounded-full
-              w-[15px]
-              h-[15px]
-              bg-white
-              border-solid border-2 border-red-500
-              absolute top-[72%] right-0
-            "
-          >
-          <div></div>
-          </div>
-        </div>
+        <ProfilePicture/>
         <div class="ml-[10px] mt-[5px] text-white">
           <p class="text-sm font-semibold">{{ author }}</p>
           <p class="text-xs font-light">

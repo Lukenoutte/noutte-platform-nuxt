@@ -13,33 +13,7 @@
       <span class="text-xs font-light text-white">{{ videoSize }}</span>
     </div>
     <div class="bg-red-500 h-1/2 rounded-t-xl cursor-pointer"></div>
-    <div
-      class="
-        bg-white
-        rounded-full
-        w-[50px]
-        h-[50px]
-        absolute
-        top-[45%]
-        right-[25px]
-        cursor-pointer
-      "
-    >
-      <div
-        class="
-          rounded-full
-          w-[15px]
-          h-[15px]
-          bg-blue-500
-          border-solid border-2 border-most-watched-card-bg
-          absolute
-          top-[72%]
-          right-0
-        "
-      >
-        <div></div>
-      </div>
-    </div>
+    <ProfilePicture newClasses="absolute top-[43%] right-[20px]"/>
     <div class="px-[30px] pt-[20px]">
       <p class="text-sm text-grey-card font-normal">{{ author }}</p>
       <p class="mt-[10px] font-medium text-white">{{ title }}</p>
@@ -57,5 +31,5 @@ defineProps({
   createdSince: { type: String, required: true },
   views: { type: String, required: true },
   videoSize: { type: String, required: true },
-});
+})
 </script>
