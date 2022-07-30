@@ -16,8 +16,9 @@ module.exports = {
         'dark-blue': '#1f1d2b',
         'input-color': '#353340',
         'menu-title-color': '#494857',
-        'most-watched-card-bg': '#252836',
-        'most-watched-title': '#9c9eb5'
+        'card': '#252836',
+        'grey-card': '#9c9eb5',
+        'like-icon-background': '#3a3d4a'
       },
     },
   },

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen w-1/6">
+  <div class="min-h-screen w-[15%]">
     <span class="text-menu-title-color font-bold text-xs mb-[10px] ml-[20px]"
       >MENU</span
     >
