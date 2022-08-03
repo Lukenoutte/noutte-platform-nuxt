@@ -1,5 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  buildModules:['@nuxtjs/fontawesome'],
+  fontawesome: {
+    icons:{
+     solid:true
+    }
+   },
   important: true,
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -20,7 +26,7 @@ module.exports = {
         'grey-card': '#9c9eb5',
         'like-icon-background': '#3a3d4a'
       },
-    },
+    }
   },
   plugins: [],
 }

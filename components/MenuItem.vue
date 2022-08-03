@@ -26,11 +26,11 @@
       "
       :class="{ 'bg-[#ff7551]': isSelected }"
     >
-      <em class="text-[#808191]" :class="{ '!text-white': isSelected }">a</em>
+      <font-awesome-icon :icon="iconName" class="text-md text-[#808191]" :class="{ 'text-white': isSelected }" />
     </div>
     <span
       class="ml-[15px] text-[#808191] font-medium"
-      :class="{ '!text-white': isSelected }"
+      :class="{ 'text-white': isSelected }"
       >{{ title }}</span
     >
   </NuxtLink>

@@ -8,17 +8,17 @@
       :title="menuItem.title"
       :isSelected="$route.path === menuItem.route"
       :pageRoute="menuItem.route"
+      :iconName="menuItem.iconName"
       @click.stop="selectMenuItem(menuItem.title)"
     />
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
 const menuItems = [
-  { title: 'Discover', route: '/' },
-  { title: 'Trending', route: '/trending' },
-  { title: 'Playlists', route: '/playlists' }
+  { title: 'Discover', route: '/', iconName: 'house' },
+  { title: 'Trending', route: '/trending', iconName: 'arrow-trend-up' },
+  { title: 'Playlists', route: '/playlists', iconName: 'heart' }
 ]
 
 
