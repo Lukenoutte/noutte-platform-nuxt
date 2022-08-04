@@ -15,13 +15,16 @@
           w-[15px]
           h-[15px]
           bg-blue-500
-          border-solid border-2 border-most-watched-card-bg
+          border-solid border-2
           absolute
           top-[72%]
           right-0
+          flex
+          justify-center
+          items-center
         "
       >
-        <div></div>
+        <font-awesome-icon icon="check" class="text-white text-[7px]" />
       </div>
     </div>
 </template>

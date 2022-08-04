@@ -7,14 +7,14 @@
       <div class="relative w-4/6">
         <font-awesome-icon
           icon="magnifying-glass"
-          class="absolute right-[20px] top-[35%] text-white text-sm"
+          class="absolute right-[20px] top-[35%] text-white text-sm cursor-pointer"
         />
         <input
           type="text"
           placeholder="Search"
           class="
             block
-            bg-input-color
+            bg-grey1-color
             h-[40px]
             w-[100%]
             font-medium

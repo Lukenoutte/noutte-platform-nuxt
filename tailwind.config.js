@@ -19,12 +19,14 @@ module.exports = {
 				sans: ["Poppins", "sans-serif"],
 			},
       colors: {
-        'dark-blue': '#1f1d2b',
-        'input-color': '#353340',
-        'menu-title-color': '#494857',
-        'card': '#252836',
-        'grey-card': '#9c9eb5',
-        'like-icon-background': '#3a3d4a'
+        'dark-blue-color': '#1f1d2b',
+        'main-color': '#ff7551',
+        'grey1-color': '#353340',
+        'grey2-color': '#9c9eb5',
+        'grey3-color': '#808191',
+        'dark-grey-color': '#494857',
+        'light-blue-color': '#252836',
+        'darkest-grey-color': '#3a3d4a'
       },
     }
   },

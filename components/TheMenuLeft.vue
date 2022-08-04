@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen w-[15%]">
-    <span class="text-menu-title-color font-bold text-xs mb-[10px] ml-[20px]"
+    <span class="text-dark-grey-color font-bold text-xs mb-[10px] ml-[20px]"
       >MENU</span
     >
     <MenuItem
@@ -18,7 +18,7 @@
 const menuItems = [
   { title: 'Discover', route: '/', iconName: 'house' },
   { title: 'Trending', route: '/trending', iconName: 'arrow-trend-up' },
-  { title: 'Playlists', route: '/playlists', iconName: 'heart' }
+  { title: 'Favorite', route: '/favorite', iconName: 'heart' }
 ]
 
 

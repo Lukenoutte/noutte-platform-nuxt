@@ -16,7 +16,6 @@
   >
     <div
       class="
-        bg-[#353340]
         h-[32px]
         w-[32px]
         rounded-xl
@@ -24,12 +23,12 @@
         justify-center
         items-center
       "
-      :class="{ 'bg-[#ff7551]': isSelected }"
+      :class="{ 'bg-main-color': isSelected, 'bg-grey1-color': !isSelected }"
     >
-      <font-awesome-icon :icon="iconName" class="text-md text-[#808191]" :class="{ 'text-white': isSelected }" />
+      <font-awesome-icon :icon="iconName" class="text-md" :class="{ 'text-white': isSelected, 'text-grey3-color': !isSelected }" />
     </div>
     <span
-      class="ml-[15px] text-[#808191] font-medium"
+      class="ml-[15px] text-grey3-color font-medium"
       :class="{ 'text-white': isSelected }"
       >{{ title }}</span
     >

@@ -2,11 +2,13 @@
   <NuxtLayout>
     <div class="flex flex-row">
       <div class="w-[65%]">
-        <h1 class="text-white text-3xl font-semibold">Trending</h1>
-        <div class="mt-[20px]">
-          <CardTrending/>
-          <CardTrending/>
-          <CardTrending/>
+        <h1 class="text-white text-3xl font-semibold">Favorite</h1>
+        <div class="mt-[100px] flex justify-center items-center">
+          <font-awesome-icon
+              icon="heart-crack"
+              class="text-light-blue-color text-[100px]"
+            />
+            <p class="text-light-blue-color text-[25px] ml-[20px] font-bold">Nothing to see here...</p>
         </div>
       </div>
       <div class="w-[30%] pl-[30px] mt-[55px]">
