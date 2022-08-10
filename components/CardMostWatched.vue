@@ -2,10 +2,13 @@
   <div
     class="
       h-[315px]
-      w-[255px]
+      w-[100%]
+      lg:255px
+      mt-[20px]
       bg-light-blue-color
       rounded-xl
-      mr-[20px]
+      lg:mr-[20px]
+      lg:mt-[0px]
       relative
     "
   >

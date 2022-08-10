@@ -6,7 +6,7 @@
       flex flex-row
       items-center
       cursor-pointer
-      hover:bg-sky-700
+      hover:bg-dark-grey-color
       rounded-md
       pl-[10px]
       ml-[10px]

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen w-[15%]">
+  <div class="min-h-screen w-[15%] hidden lg:block">
     <span class="text-dark-grey-color font-bold text-xs mb-[10px] ml-[20px]"
       >MENU</span
     >

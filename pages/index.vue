@@ -1,9 +1,9 @@
 <template>
   <NuxtLayout>
-    <div class="min-h-screen pr-[40px] pb-[50px]">
-      <div>
+    <div class="min-h-screen lg:pr-[40px] pb-[50px]  ">
+      <div class="px-[20px] lg:px-[0px]">
         <span class="text-white text-3xl font-semibold">Discover</span>
-        <div class="flex flex-row mt-[30px]">
+        <div class="flex mt-[30px] flex-col lg:flex-row">
           <CardDiscover
             widthCard="65%"
             title="How to do basic"
@@ -22,9 +22,9 @@
           />
         </div>
       </div>
-      <div class="mt-[50px]">
+      <div class="mt-[50px] px-[20px] lg:px-[0px]">
         <span class="text-white text-2xl font-medium">Most watched</span>
-        <div class="mt-[30px] flex flex-row">
+        <div class="mt-[30px] flex flex-col lg:flex-row">
           <CardMostWatched
             title="Skateboard"
             author="Pedro A."

@@ -4,9 +4,11 @@
       h-[365px]
       bg-red-500
       rounded-lg
-      mr-[20px]
+      mt-[30px]
       p-[40px]
-      card-size
+      w-[100%]
+      lg:card-size
+      lg:mr-[20px]
       relative
       cursor-pointer
     "

@@ -3,7 +3,7 @@
       <TheHeader/>
       <div class="flex flex-row">
         <TheMenuLeft/>
-        <div class="w-[85%]">
+        <div class="w-[100%] lg:w-[85%]">
           <slot/>
         </div>
       </div>
