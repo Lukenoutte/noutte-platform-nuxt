@@ -9,7 +9,9 @@
           <CardTrending/>
         </div>
       </div>
-    <MostPopupar/>
+      <div class="w-[100%] lg:w-[35%]">
+        <MostPopupar/>
+      </div>
     </div>
   </NuxtLayout>
 </template>

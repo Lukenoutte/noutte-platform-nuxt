@@ -6,12 +6,14 @@
         <div class="mt-[100px] flex justify-center items-center">
           <font-awesome-icon
               icon="heart-crack"
-              class="text-light-blue-color text-[100px]"
+              class="text-light-blue-color text-[70px] lg:text-[100px]"
             />
-            <p class="text-light-blue-color text-[25px] ml-[20px] font-bold">Nothing to see here...</p>
+            <p class="text-light-blue-color text-[20px] lg:text-[25px] ml-[20px] font-bold">Nothing to see here...</p>
         </div>
       </div>
-      <MostPopupar/>
+      <div class="w-[100%] lg:w-[35%]">
+        <MostPopupar/>
+      </div>
     </div>
   </NuxtLayout>
 </template>

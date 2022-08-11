@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <div class="min-h-screen lg:pr-[40px] pb-[50px]  ">
+    <div class="min-h-screen pb-[50px]  ">
       <div class="px-[20px] lg:px-[0px]">
         <span class="text-white text-3xl font-semibold">Discover</span>
         <div class="flex mt-[30px] flex-col lg:flex-row">

@@ -9,7 +9,6 @@
       :isSelected="$route.path === menuItem.route"
       :pageRoute="menuItem.route"
       :iconName="menuItem.iconName"
-      @click.stop="selectMenuItem(menuItem.title)"
     />
   </div>
 </template>

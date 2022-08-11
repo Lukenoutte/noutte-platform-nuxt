@@ -29,7 +29,7 @@
     >
      <font-awesome-icon icon="heart" :class="{'text-grey3-color': !isFavorite, 'text-white': isFavorite}" />
     </div>
-    <div class="bg-white h-[100%] w-[220px] rounded-xl relative cursor-pointer">
+    <div class="bg-white h-[100%] w-[30%] rounded-xl relative cursor-pointer">
       <div
         class="
           bg-neutral-800/50
@@ -45,7 +45,7 @@
       </div>
     </div>
     <div class="ml-[20px]">
-      <p class="text-white font-medium text-2xl cursor-pointer">How to basic</p>
+      <p class="text-white font-medium text-md lg:text-2xl cursor-pointer">How to basic</p>
       <div class="mt-[15px] text-xs text-grey2-color font-light">
         <span>125.00 views</span>
         <span class="ml-[20px]">12.00 likes</span>
