@@ -60,5 +60,7 @@
 </template>
 
 <script setup>
+import { useVideosStore } from '~~/stores/videosStore'
+const videoStore = useVideosStore()
 </script>
 

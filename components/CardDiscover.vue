@@ -6,12 +6,12 @@
       rounded-lg
       mt-[30px]
       p-[40px]
-      w-[100%]
-      lg:card-size
+      card-size
       lg:mr-[20px]
       relative
       cursor-pointer
     "
+    :style="`width:${widthCard};`"
   >
     <div class="flex flex-col">
       <span class="text-white text-4xl font-medium">{{ title }}</span>
@@ -41,11 +41,13 @@ defineProps({
   createdSince: { type: String, required: true },
   views: { type: String, required: true },
   videoSize: { type: String, required: true },
-});
+})
 </script>
 
 <style>
-.card-size {
-  width: v-bind(widthCard);
+@media only screen and (max-width: 1024px) {
+  .card-size {
+    width: 100%!important;
+  }
 }
 </style>

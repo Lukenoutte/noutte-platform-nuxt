@@ -29,7 +29,7 @@
     >
      <font-awesome-icon icon="heart" :class="{'text-grey3-color': !isFavorite, 'text-white': isFavorite}" />
     </div>
-    <div class="bg-white h-[100%] w-[30%] rounded-xl relative cursor-pointer">
+    <div class="bg-white h-[100%] w-[40%] md:w-[35%] rounded-xl relative cursor-pointer">
       <div
         class="
           bg-neutral-800/50
@@ -41,21 +41,21 @@
           cursor-pointer
         "
       >
-        <span class="text-xs font-light text-white">2 min</span>
+        <span class="text-xs font-light text-white">{{ videoSize }}</span>
       </div>
     </div>
     <div class="ml-[20px]">
-      <p class="text-white font-medium text-md lg:text-2xl cursor-pointer">How to basic</p>
+      <p class="text-white font-medium text-md lg:text-2xl cursor-pointer">{{ title }}</p>
       <div class="mt-[15px] text-xs text-grey2-color font-light">
-        <span>125.00 views</span>
-        <span class="ml-[20px]">12.00 likes</span>
+        <span>{{ views }} views</span>
+        <span class="ml-[20px]">{{ likes }} likes</span>
       </div>
       <div class="flex flex-row mt-[20px]">
         <ProfilePicture/>
         <div class="mt-[5px] ml-[15px] font-light">
-          <p class="text-white text-xs cursor-pointer">Author</p>
+          <p class="text-white text-xs cursor-pointer">{{ author }}</p>
           <p class="mt-[5px] text-grey2-color text-[11px]">
-            4 days ago
+            {{ createdSince }}
           </p>
         </div>
       </div>
@@ -68,4 +68,13 @@
   const onClickToFavorite = () => {
     isFavorite.value = !isFavorite.value
   }
+
+  defineProps({
+    title: { type: String, required: true },
+    author: { type: String, required: true },
+    createdSince: { type: String, required: true },
+    views: { type: String, required: true },
+    videoSize: { type: String, required: true },
+    likes: { type: String, required: true }
+  })
 </script>

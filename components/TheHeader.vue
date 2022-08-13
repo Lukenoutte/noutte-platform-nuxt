@@ -1,11 +1,6 @@
 <template>
   <header class="flex flex-row py-[20px]">
     <div class="lg:hidden block">
-      <!-- <client-only>
-        <Slide >
-          <span>test</span>
-        </Slide>
-      </client-only> -->
     </div>
     <div class="h-10 w-[15%] flex items-center">
       <span class="pl-5 text-white font-semibold cursor-pointer">Noutte</span>
