@@ -1,7 +1,6 @@
 <template>
   <header class="flex flex-row py-[20px]">
-    <div class="lg:hidden block">
-    </div>
+    <div class="lg:hidden block"></div>
     <div class="h-10 w-[15%] flex items-center">
       <span class="pl-5 text-white font-semibold cursor-pointer">Noutte</span>
     </div>
@@ -9,7 +8,13 @@
       <div class="relative w-4/6">
         <font-awesome-icon
           icon="magnifying-glass"
-          class="absolute right-[20px] top-[35%] text-white text-sm cursor-pointer"
+          class="
+            absolute
+            right-[20px]
+            top-[35%]
+            text-white text-sm
+            cursor-pointer
+          "
         />
         <input
           type="text"
@@ -30,11 +35,29 @@
       </div>
     </div>
     <div
-      class="h-10 w-[200px] flex flex-row items-center justify-end absolute right-[20px]"
+      class="
+        h-10
+        w-[200px]
+        flex flex-row
+        items-center
+        justify-end
+        absolute
+        right-[20px]
+      "
     >
-      <div class="bg-white h-7 w-7 rounded-full"></div>
-      <span class="ml-5 text-white text-sm">Lucas Lima</span>
-      <div class="ml-5 text-white">
+      <div class="bg-white h-7 w-7 rounded-full cursor-pointer"></div>
+      <span
+        class="
+          text-white text-sm
+          cursor-pointer
+          hover:bg-dark-grey-color
+          p-[7px]
+          mx-[10px]
+          rounded-md
+        "
+        >Lucas Lima</span
+      >
+      <div class="text-white">
         <font-awesome-icon icon="bell" class="text-xl cursor-pointer" />
       </div>
     </div>

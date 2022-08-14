@@ -2,7 +2,7 @@
   <div
     class="
       h-[365px]
-      bg-red-500
+      bg-main-color
       rounded-lg
       mt-[30px]
       p-[40px]

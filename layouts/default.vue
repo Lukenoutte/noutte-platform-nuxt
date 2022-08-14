@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-dark-blue-color min-h-screen">
+  <div class="bg-dark-blue-color min-h-screen pb-[50px]">
       <TheHeader/>
       <div class="flex flex-row">
         <TheMenuLeft/>

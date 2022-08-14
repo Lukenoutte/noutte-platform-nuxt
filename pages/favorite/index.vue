@@ -3,7 +3,14 @@
     <div class="flex flex-col lg:flex-row">
       <div class="w-[100%] lg:w-[65%] p-[20px] lg:p-[0px]">
         <h1 class="text-white text-3xl font-semibold">Favorite</h1>
-        <div class="mt-[100px] flex justify-center items-center">
+        <div v-if="favoritedList.length">
+          <CardHorizontal
+            v-for="(video, index) in favoritedList"
+            :key="index"
+            :videoTrending="video"
+          />
+        </div>
+        <div class="mt-[100px] flex justify-center items-center" v-else>
           <font-awesome-icon
               icon="heart-crack"
               class="text-light-blue-color text-[70px] lg:text-[100px]"
@@ -19,4 +26,9 @@
 </template>
 
 <script setup>
+  import { storeToRefs } from "pinia"
+  import { useVideoStore } from '~~/stores/videoStore'
+  const videoStore = useVideoStore()
+  // const favoritedList = videoStore.favoritedList
+  const { favoritedList } = storeToRefs(videoStore)
 </script>
