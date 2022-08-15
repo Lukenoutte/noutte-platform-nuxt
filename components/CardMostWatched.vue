@@ -17,13 +17,13 @@
     </div>
     <div class="bg-main-color h-1/2 rounded-t-xl cursor-pointer"></div>
     <ProfilePicture newClasses="absolute top-[43%] right-[20px]"/>
-    <div class="px-[30px] pt-[20px]">
+    <div class="px-[30px] pt-[15px] relative">
       <p class="text-sm text-grey2-color font-normal">{{ author }}</p>
       <p class="mt-[10px] font-medium text-white">{{ title }}</p>
-      <p class="text-xs mt-[20px] text-grey2-color font-light">
-        {{ `${views} views - ${createdSince}` }}
-      </p>
     </div>
+    <p class="text-xs mt-[20px] text-grey2-color font-light absolute bottom-[15px] left-[30px]">
+      {{ `${views} views - ${createdSince}` }}
+    </p>
   </div>
 </template>
 
