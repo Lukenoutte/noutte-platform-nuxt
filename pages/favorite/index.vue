@@ -29,6 +29,5 @@
   import { storeToRefs } from "pinia"
   import { useVideoStore } from '~~/stores/videoStore'
   const videoStore = useVideoStore()
-  // const favoritedList = videoStore.favoritedList
   const { favoritedList } = storeToRefs(videoStore)
 </script>

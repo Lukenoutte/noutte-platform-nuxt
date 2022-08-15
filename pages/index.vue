@@ -6,15 +6,16 @@
         <div class="flex flex-col lg:flex-row">
           <CardDiscover
             widthCard="65%"
-            title="How to do basic"
+            title="You could get paid to eat candy"
             author="Lucas Lima"
             views="2k"
             createdSince="2 weeks ago"
             videoSize="2 min"
+            image="~/assets/images/candy.jpg"
           />
           <CardDiscover
             widthCard="35%"
-            title="Skateboard"
+            title="Spiders Can Fear Other Spiders"
             author="Pedro A."
             views="53k"
             createdSince="1 week ago"
