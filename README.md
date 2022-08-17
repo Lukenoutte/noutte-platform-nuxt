@@ -2,6 +2,8 @@
 
 Video plataform prototype.
 
+Link: https://noutte-nuxt.netlify.app/
+
 ![screen](https://user-images.githubusercontent.com/32497719/185219520-057cf8f4-c470-4427-8de3-aef8a2ea8f4c.png)
 
 
