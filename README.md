@@ -1,42 +1,31 @@
-# Nuxt 3 Minimal Starter
+## 🎯 About
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Video plataform prototype.
 
-## Setup
+![screen](https://user-images.githubusercontent.com/32497719/185219520-057cf8f4-c470-4427-8de3-aef8a2ea8f4c.png)
 
-Make sure to install the dependencies:
 
+## 🚀 Technologies
+
+- Vue3
+- Nuxt3
+- Tailwindcss
+- Pinia
+
+## ✅ Requirements
+
+Before start you will need [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) instaled.
+
+## 🔌 Starting the project
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+$ git clone https://github.com/Lukenoutte/noutte-platform-nuxt.git
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
+### 
 
 ```bash
-npm run dev
+$ cd noutte-bank-app
+$ npm install
+$ npm run dev
+# The server will initialize in the <http://localhost:3000>
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
