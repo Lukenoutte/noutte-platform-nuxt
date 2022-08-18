@@ -1,7 +1,12 @@
 <template>
   <header class="flex flex-row py-[20px]">
     <div class="lg:hidden block"></div>
-    <div class="h-10 w-[15%] flex items-center">
+    <div class="h-10 w-[20%] lg:w-[15%] flex items-center">
+      <font-awesome-icon
+        icon="bars"
+        @click="globalStore.setShowMobileMenu"
+        class="text-white text-[20px] block lg:hidden ml-[20px] cursor-pointer"
+      />
       <span class="pl-5 text-white font-semibold cursor-pointer">Noutte</span>
     </div>
     <div class="w-[60%] flex items-center hidden sm:block">
@@ -65,5 +70,7 @@
 </template>
 
 <script setup>
+import { useGlobalStore } from "~~/stores/globalStore"
+const globalStore = useGlobalStore()
 </script>
 

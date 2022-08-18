@@ -7,7 +7,8 @@ import {
   faArrowTrendUp,
   faHeart,
   faCheck,
-  faHeartCrack
+  faHeartCrack,
+  faBars
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faBell,
@@ -16,7 +17,8 @@ library.add(faBell,
   faArrowTrendUp,
   faHeart,
   faCheck,
-  faHeartCrack)
+  faHeartCrack,
+  faBars)
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('font-awesome-icon', FontAwesomeIcon)

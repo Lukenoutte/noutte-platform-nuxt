@@ -27,7 +27,7 @@
         <span class="text-white text-2xl font-medium">Most watched</span>
         <div class="mt-[30px] flex flex-col lg:flex-row">
           <CardMostWatched
-            v-for="(video, index) in discoverVideos"
+            v-for="(video, index) in globalStore.mostWatchedList"
             :key="index"
             :title="video.title"
             :author="video.author"
@@ -42,6 +42,7 @@
 </template>
 
 <script setup>
-import { discoverVideos } from '../utils'
+import { useGlobalStore } from "~~/stores/globalStore";
+const globalStore = useGlobalStore();
 </script>
 

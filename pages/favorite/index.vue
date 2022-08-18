@@ -10,7 +10,7 @@
             :videoTrending="video"
           />
         </div>
-        <div class="mt-[100px] flex justify-center items-center" v-else>
+        <div class="mt-[100px] flex justify-center items-center min-h-[300px]" v-else>
           <font-awesome-icon
               icon="heart-crack"
               class="text-light-blue-color text-[70px] lg:text-[100px]"
@@ -27,7 +27,7 @@
 
 <script setup>
   import { storeToRefs } from "pinia"
-  import { useVideoStore } from '~~/stores/videoStore'
-  const videoStore = useVideoStore()
-  const { favoritedList } = storeToRefs(videoStore)
+  import { useGlobalStore } from '~~/stores/globalStore'
+  const globalStore = useGlobalStore()
+  const { favoritedList } = storeToRefs(globalStore)
 </script>

@@ -17,7 +17,8 @@
         w-[30px]
         h-[30px]
         absolute
-        top-[20px]
+        bottom-[20px]
+        lg:top-[20px]
         right-[20px]
         cursor-pointer
         flex
@@ -65,8 +66,8 @@
         }}</span>
       </div>
     </div>
-    <div class="ml-[20px]">
-      <p class="text-white font-medium text-md lg:text-2xl cursor-pointer">
+    <div class="ml-[20px] w-[60%]">
+      <p class="text-white font-medium text-sm lg:text-xl cursor-pointer">
         {{ videoTrending.title }}
       </p>
       <div class="mt-[15px] text-xs text-grey2-color font-light">
@@ -74,7 +75,7 @@
         <span class="ml-[20px]">{{ videoTrending.likes }} likes</span>
       </div>
       <div class="flex flex-row mt-[20px]">
-        <ProfilePicture />
+        <ProfilePicture newClasses="h-[40px] w-[40px] lg:h-[50px] lg:w-[50px] relative"/>
         <div class="mt-[5px] ml-[15px] font-light">
           <p class="text-white text-xs cursor-pointer">
             {{ videoTrending.author }}
@@ -90,13 +91,13 @@
 
 <script setup>
 import { computed } from "vue"
-import { useVideoStore } from "~~/stores/videoStore";
-const videoStore = useVideoStore();
+import { useGlobalStore } from "~~/stores/globalStore";
+const globalStore = useGlobalStore();
 const onClickToFavorite = () => {
-  videoStore.handleFavorited(props.videoTrending);
+  globalStore.handleFavorited(props.videoTrending);
 };
 const isFavorited = computed(() => {
-  return videoStore.isFavorited(props.videoTrending.id)
+  return globalStore.isFavorited(props.videoTrending.id)
 })
 const props = defineProps({
   videoTrending: { type: Object, required: true },

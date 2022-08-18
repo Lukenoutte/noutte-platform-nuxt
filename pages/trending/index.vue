@@ -5,7 +5,7 @@
         <h1 class="text-white text-3xl font-semibold">Trending</h1>
         <div class="mt-[20px]">
           <CardHorizontal
-            v-for="(video, index) in videoStore.trendingList"
+            v-for="(video, index) in globalStore.trendingList"
             :key="index"
             :videoTrending="video"
           />
@@ -19,6 +19,6 @@
 </template>
 
 <script setup>
-  import { useVideoStore } from '~~/stores/videoStore'
-  const videoStore = useVideoStore()
+  import { useGlobalStore } from '~~/stores/globalStore'
+  const globalStore = useGlobalStore()
 </script>

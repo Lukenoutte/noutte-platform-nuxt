@@ -1,11 +1,13 @@
 import { defineStore } from 'pinia'
-import { trendingList } from '../utils'
+import { trendingList, mostWatchedList } from '../utils'
 
-export const useVideoStore = defineStore('video',
+export const useGlobalStore = defineStore('global',
     {
         state: () => ({
             favoritedList: [],
-            trendingList
+            trendingList,
+            mostWatchedList,
+            showMobileMenu: false
         }),
         getters: {
             isFavorited: (state) => (idVideo) => state.favoritedList.some(item => item.id === idVideo)
@@ -16,6 +18,9 @@ export const useVideoStore = defineStore('video',
                 this.favoritedList = videoAlreadyFavorited
                     ? this.favoritedList.filter(item => item.id !== newVideo.id)
                     : [...this.favoritedList, newVideo]
+            },
+            setShowMobileMenu() {
+                this.showMobileMenu = !this.showMobileMenu
             },
         }
     }

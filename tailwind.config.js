@@ -20,6 +20,7 @@ module.exports = {
 			},
       colors: {
         'dark-blue-color': '#1f1d2b',
+        'mobile-menu-color': '#211F2E',
         'main-color': '#379e73',
         'grey1-color': '#353340',
         'grey2-color': '#9c9eb5',

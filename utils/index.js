@@ -1,4 +1,4 @@
-export const discoverVideos = [
+export const mostWatchedList = [
     {
         id: 1465468,
         title: "A 76 million-year-old dinosaur skeleton",
