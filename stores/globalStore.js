@@ -19,8 +19,8 @@ export const useGlobalStore = defineStore('global',
                     ? this.favoritedList.filter(item => item.id !== newVideo.id)
                     : [...this.favoritedList, newVideo]
             },
-            setShowMobileMenu() {
-                this.showMobileMenu = !this.showMobileMenu
+            setShowMobileMenu(value) {
+                this.showMobileMenu = value
             },
         }
     }

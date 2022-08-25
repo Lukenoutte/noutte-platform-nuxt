@@ -12,7 +12,7 @@
     "
     :class="{
       hidden: !showMobileMenu,
-      'block bg-mobile-menu-color lg:bg-dark-blue-color pt-[20px]': showMobileMenu,
+      'block bg-mobile-menu-color lg:bg-dark-blue-color pt-[20px] lg:pt-[0px]': showMobileMenu,
     }"
   >
     <span class="text-dark-grey-color font-bold text-xs mb-[10px] ml-[20px]"
@@ -25,7 +25,7 @@
       :isSelected="$route.path === menuItem.route"
       :pageRoute="menuItem.route"
       :iconName="menuItem.iconName"
-      @click="globalStore.setShowMobileMenu"
+      @click="globalStore.setShowMobileMenu(!showMobileMenu)"
     />
   </div>
 </template>

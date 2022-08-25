@@ -4,7 +4,7 @@
     <div class="h-10 w-[20%] lg:w-[15%] flex items-center">
       <font-awesome-icon
         icon="bars"
-        @click="globalStore.setShowMobileMenu"
+        @click="globalStore.setShowMobileMenu(!showMobileMenu)"
         class="text-white text-[20px] block lg:hidden ml-[20px] cursor-pointer"
       />
       <span class="pl-5 text-white font-semibold cursor-pointer">Noutte</span>
@@ -70,7 +70,9 @@
 </template>
 
 <script setup>
+import { storeToRefs } from "pinia";
 import { useGlobalStore } from "~~/stores/globalStore"
 const globalStore = useGlobalStore()
+const { showMobileMenu } = storeToRefs(globalStore);
 </script>
 

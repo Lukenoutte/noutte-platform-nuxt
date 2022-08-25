@@ -3,7 +3,7 @@
       <TheHeader/>
       <div class="flex flex-row relative">
         <TheMenuLeft/>
-        <div class="w-[100%] lg:w-[85%]">
+        <div class="w-[100%] lg:w-[85%]" @click="globalStore.setShowMobileMenu(false)">
           <slot/>
         </div>
       </div>
@@ -11,4 +11,6 @@
 </template>
 
 <script setup>
+import { useGlobalStore } from "~~/stores/globalStore";
+const globalStore = useGlobalStore();
 </script>
