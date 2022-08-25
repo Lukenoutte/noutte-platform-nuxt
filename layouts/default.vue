@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-dark-blue-color min-h-screen pb-[50px]">
+  <div class="bg-dark-blue-color min-h-screen">
       <TheHeader/>
       <div class="flex flex-row relative">
         <TheMenuLeft/>
-        <div class="w-[100%] lg:w-[85%]" @click="globalStore.setShowMobileMenu(false)">
+        <div class="w-[100%] lg:w-[85%] pb-[50px]" @click="globalStore.setShowMobileMenu(false)">
           <slot/>
         </div>
       </div>
