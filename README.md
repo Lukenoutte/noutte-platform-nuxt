@@ -26,7 +26,7 @@ $ git clone https://github.com/Lukenoutte/noutte-platform-nuxt.git
 ### 
 
 ```bash
-$ cd noutte-bank-app
+$ cd noutte-platform-nuxt
 $ npm install
 $ npm run dev
 # The server will initialize in the <http://localhost:3000>
